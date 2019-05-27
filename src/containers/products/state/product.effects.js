@@ -26,7 +26,7 @@ export const deleteProductApi = product => {
 export const addProductAPI = product => {
   return () => {
     Axios.post(`${BASE_API}`, product).then(
-      history.push('/products')
+      history.push('./products')
     )
   }
 }
